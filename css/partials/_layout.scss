@@ -1,15 +1,15 @@
-// Layout of project 
+// Layout of project [responsive]
 
 // Container devices
 
-$container-xl: 1440px;
-$container-l: 1140px;
-$container-m: 960px;
-$container-s: 540px;
+$container-xl: 1440px; // Desktop 
+$container-l: 1140px; // Tablet
+$container-m: 960px; // Mobile
+$container-s: 540px; // Mobile small
 
 // Mixins of media query
 
-@mixin responsive($device){
+@mixin responsive($device){ // dispositivo 
     @if $device == xl{
         // For resolutions upper than 1440px
         @media screen and (min-width: $container-xl){
