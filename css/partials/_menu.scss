@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+
+    position: fixed;
+    z-index: 800;
+}
+
+.active-header {
+    background-color: $white-normal;
+    box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521271), 0px 6.38599px 10.0172px rgba(169, 80, 196, 0.04), 0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
+}
+
+// Classes DESKTOP
+
+.navbar-desktop{
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
