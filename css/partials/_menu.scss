@@ -22,3 +22,78 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.navbar-desktop-item-1{
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-desktop-item-2{
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-desktop {
+    list-style: none;
+
+    display: flex;
+    align-items: flex;
+    justify-content: flex-start;
+}
+
+.menu-item {
+    margin-left: 16px;
+}
+
+.nav-link-desktop {
+    display: inline-block;
+    padding: 12px 16px;
+    position: relative;
+    
+    border: 1px solid red;
+
+    &::after{
+        content: '';
+        position: absolute;
+
+        top: 42%;
+        right: -3px;
+
+        width: 7px;
+        height: 7px;
+
+        border-radius: 1px;
+        transform: rotate(45deg);
+        transition: .5s ease;
+
+        border-bottom: 2px solid $primary-normal;
+        border-right: 2px solid $primary-normal;
+
+
+    }
+
+    &:hover{
+        opacity: .7;
+        &::after{
+            top: 45%;
+        }
+    }
+}
