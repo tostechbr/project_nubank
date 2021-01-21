@@ -41,10 +41,12 @@ function RemoveDropdown(){
     dropdownMenu3.addEventListener.remove('active-dropdown-menu');  
 }
 
-menuItem1.addEventListener('Click', ShowDropdown1);
-menuItem2.addEventListener('Click', ShowDropdown2);
-menuItem3.addEventListener('Click', ShowDropdown3);
+menuItem1.addEventListener('click', ShowDropdown1);
+menuItem2.addEventListener('click', ShowDropdown2);
+menuItem3.addEventListener('click', ShowDropdown3);
 
 dropdownMenu1.addEventListener('mouseleave', RemoveDropdown);
 dropdownMenu2.addEventListener('mouseleave', RemoveDropdown);
 dropdownMenu3.addEventListener('mouseleave', RemoveDropdown);
+
+// MENU MOBILE
