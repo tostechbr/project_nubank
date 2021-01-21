@@ -227,6 +227,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 800;
 }
 
 .navbar-desktop-item-1 {
@@ -392,7 +393,6 @@ header {
 .bx {
   width: 36px;
   height: 36px;
-  background-color: white;
   position: relative;
   cursor: pointer;
   z-index: 800;
@@ -407,6 +407,8 @@ header {
   left: 17%;
   width: 70%;
   height: 2px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
   background-color: #82269E;
 }
 
@@ -417,13 +419,14 @@ header {
   left: 17%;
   width: 70%;
   height: 2px;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
   background-color: #82269E;
 }
 
 .active-bx {
   width: 36px;
   height: 36px;
-  background-color: white;
   position: relative;
   cursor: pointer;
   z-index: 800;
@@ -448,8 +451,8 @@ header {
   position: absolute;
   top: 50%;
   left: 17%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
   width: 70%;
   height: 2px;
   background-color: #82269E;
@@ -468,10 +471,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 1;
-  pointer-events: all;
+  opacity: 0;
+  pointer-events: none;
   -webkit-transform: translate3d(0, -100px, 0);
           transform: translate3d(0, -100px, 0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .active-menu-mobile {

@@ -40,6 +40,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    z-index: 800;
 }
 
 .navbar-desktop-item-1{
@@ -188,12 +190,13 @@ header {
 .bx {
     width: 36px;
     height: 36px;
-    background-color: white;
+    
 
     position: relative;
     cursor: pointer;
     z-index: 800;
     transition: .7s ease;
+    
 
     &::after {
         content: '';
@@ -203,6 +206,7 @@ header {
 
         width: 70%;
         height: 2px;
+        transition: .7s ease;
 
         background-color: $primary-normal;
     }
@@ -214,6 +218,7 @@ header {
 
         width: 70%;
         height: 2px;
+        transition: .7s ease;
 
         background-color: $primary-normal;
     }
@@ -222,7 +227,7 @@ header {
 .active-bx{
      width: 36px;
     height: 36px;
-    background-color: white;
+    
 
     position: relative;
     cursor: pointer;
@@ -248,7 +253,7 @@ header {
         top: 50%;
         left: 17%;
 
-        transform: rotate(-45deg);
+        transform: rotate(-405deg);
 
         width: 70%;
         height: 2px;
@@ -268,10 +273,11 @@ header {
     justify-content: center;
     align-items: center;
 
-    opacity: 1;
-    pointer-events: all;
+    opacity: 0;
+    pointer-events: none;
 
     transform: translate3d(0,-100px,0);
+    transition: 1s ease;
     
 }
 
