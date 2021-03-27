@@ -225,7 +225,7 @@ header {
 }
 
 .active-bx{
-     width: 36px;
+    width: 36px;
     height: 36px;
     
 
@@ -263,36 +263,32 @@ header {
 
 }
 
-
 .menu-mobile {
-    width: 100vw;
-    height: 100vh;
-
     background-color: $white-normal;
-    display: flex;
+
+    display: none;
     justify-content: center;
     align-items: center;
 
     opacity: 0;
     pointer-events: none;
+    z-index: 888;
 
-    transform: translate3d(0,-100px,0);
     transition: 1s ease;
     
 }
 
-.active-menu-mobile {
-    opacity: 1;
-    pointer-events: all;
-
-}
-
 .nav-list-mobile{
-    max-width: $container-xl;
+    height: 50vh;
+    max-width: 1200px;
     list-style: none;
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 7s ease;
 }
 
 .nav-link-mobile {
@@ -324,5 +320,5 @@ header {
             width: 100%;
         }
     }
-
 }
+

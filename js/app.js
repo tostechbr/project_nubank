@@ -57,10 +57,10 @@ const showMenu = (toggleId, navId) => {
     
     if(toggle && nav){
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('active-menu-mobile');
+            nav.classList.toggle('menu-mobile');
             toggle.classList.toggle('active-bx');
         })
     }
 }
 
-showMenu('bx', 'menu-mobile');
+showMenu('bx', 'menu-mobile')
