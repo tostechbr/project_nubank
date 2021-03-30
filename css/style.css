@@ -131,6 +131,16 @@
   overflow: hidden;
 }
 
+.hero {
+  height: 90vh;
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    height: auto;
+  }
+}
+
 h1 {
   color: #161617;
   font-family: 'Sora', sans-serif;

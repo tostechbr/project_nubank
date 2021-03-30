@@ -118,3 +118,11 @@ $container-s: 540px; // Mobile small
 .hidden{
     overflow: hidden;
 }
+
+.hero {
+    height: 90vh;
+
+    @include responsive(s){
+        height: auto;
+    }
+}
