@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: container-xl;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 96px 24px;
   display: -webkit-box;

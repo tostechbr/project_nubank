@@ -48,7 +48,7 @@ $container-s: 540px; // Mobile small
 }
 
 .container {
-    max-width: container-xl;
+    max-width: $container-xl;
     margin: 0 auto;
 
     padding: 96px 24px;
