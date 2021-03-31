@@ -59,6 +59,8 @@ $container-s: 540px; // Mobile small
     flex-direction: row;
     overflow: hidden;
 
+    
+
     @include responsive(s){
         flex-direction: column;
 
@@ -118,11 +120,29 @@ $container-s: 540px; // Mobile small
 .hidden{
     overflow: hidden;
 }
-
+//HERO
 .hero {
     height: 90vh;
-
+    
     @include responsive(s){
         height: auto;
+    }
+}
+
+.bg-home {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.svg-bg-home{
+    width: 150%;
+
+    @include responsive(xl){
+        width: 100%;
     }
 }
