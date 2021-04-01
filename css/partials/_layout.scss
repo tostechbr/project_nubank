@@ -146,3 +146,24 @@ $container-s: 540px; // Mobile small
         width: 100%;
     }
 }
+.list-item {
+    list-style: none;
+    position: relative;
+
+    padding: 8px 8px 8px 72px;
+    margin-bottom: 48px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 64px;
+        height: 64px;
+
+        background: red;
+    }
+}
